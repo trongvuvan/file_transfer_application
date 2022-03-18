@@ -1,0 +1,9 @@
+Để có thể sử dụng thư viện mysql.h cần cài đặt libmysqlclient-dev
+Sử dụng câu lệnh :
+         sudo apt install libmysqlclient-dev
+Sau khi cài đặt xong,cần chuẩn bị môi trường cơ sở dữ liệu
+Tạo cơ sở dữ liệu network trong mysql
+Sau đó import file network.sql vào cơ sở dữ liệu
+	sudo mysql -u root -p network < network.sql
+Gõ make để biên dịch chương trình
+Do server cần truy cập vào mysql nên ta phải chạy server dưới quyền của root,client thì không cần
